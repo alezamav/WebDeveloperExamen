@@ -62,6 +62,8 @@
    {
         @Html.AntiForgeryToken()
 
+    @Html.HiddenFor(model => model.Id)
+
         <div class="form-actions no-color">
             <input type="submit" value="Eliminar" class="btn btn-default" />
             <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>

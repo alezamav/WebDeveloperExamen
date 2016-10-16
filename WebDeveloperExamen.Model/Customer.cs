@@ -20,19 +20,24 @@ namespace WebDeveloperExamen.Model
 
         [Required]
         [StringLength(40)]
+        [Display(Name = "Nombre")]
         public string FirstName { get; set; }
 
         [Required]
         [StringLength(40)]
+        [Display(Name = "Apellidos")]
         public string LastName { get; set; }
 
         [StringLength(40)]
+        [Display(Name = "Ciudad")]
         public string City { get; set; }
 
         [StringLength(40)]
+        [Display(Name = "País")]
         public string Country { get; set; }
 
         [StringLength(20)]
+        [Display(Name = "Teléfono")]
         public string Phone { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

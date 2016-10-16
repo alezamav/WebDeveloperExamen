@@ -21,21 +21,27 @@ namespace WebDeveloperExamen.Model
 
         [Required]
         [StringLength(40)]
+        [Display(Name = "Compania")]
         public string CompanyName { get; set; }
 
         [StringLength(50)]
+        [Display(Name = "Nombre de Contacto")]
         public string ContactName { get; set; }
 
         [StringLength(40)]
+        [Display(Name = "Contacto")]
         public string ContactTitle { get; set; }
 
         [StringLength(40)]
+        [Display(Name = "Ciudad")]
         public string City { get; set; }
 
         [StringLength(40)]
+        [Display(Name = "País")]
         public string Country { get; set; }
 
         [StringLength(30)]
+        [Display(Name = "Teléfono")]
         public string Phone { get; set; }
 
         [StringLength(30)]

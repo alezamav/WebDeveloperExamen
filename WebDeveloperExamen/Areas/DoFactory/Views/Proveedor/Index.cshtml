@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Proveedor</h2>
+  
+
+@CustomHelper.AlertMessages()
+<div>
+    <a href="#" onclick="getModalContent('@Url.Action("Crear",new { area="DoFactory" })'); return false;" data-toggle="modal" data-target="#modal-container" class="btn btn-success btn-sm">
+        <span class="glyphicon glyphicon-plus"></span> Nuevo
+    </a>
+</div>
+<br />
+
+<div class="row">
+    @CustomHelper.RowSizeDropdown()
+    <div class="col-lg-8" id="paginator-container">
+        <div class="paginator"></div>
+    </div>
+</div>
+<div id="ContenidoProveedor"></div>
+
+@Scripts.Render("~/bundles/unobtrusive-ajax")
+@CustomHelper.GetModal("Proveedor")
+
+
+@Scripts.Render("~/bundles/modal")
+@Scripts.Render("~/bundles/paginator")
+@Scripts.Render("~/bundles/proveedor")
+
+<script type="text/javascript">
+
+    var pageSizeAction = '@Url.Action("CantidadPagina", new { controller = "Proveedor", area = "DoFactory" })';
+    var listAction = '@Url.Action("Lista", new { controller = "Proveedor", area = "DoFactory" })';
+</script>

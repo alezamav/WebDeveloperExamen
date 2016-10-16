@@ -200,7 +200,9 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\Startup.Injector.cs" />
     <Compile Include="Areas\DoFactory\Controllers\BaseController.cs" />
+    <Compile Include="Areas\DoFactory\Controllers\ClienteController.cs" />
     <Compile Include="Areas\DoFactory\Controllers\ProductoController.cs" />
+    <Compile Include="Areas\DoFactory\Controllers\ProveedorController.cs" />
     <Compile Include="Areas\DoFactory\DoFactoryAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -217,6 +219,8 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\DoFactory\Scripts\proveedor.js" />
+    <Content Include="Areas\DoFactory\Scripts\cliente.js" />
     <Content Include="Areas\DoFactory\Scripts\producto.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -238,6 +242,18 @@
     <Content Include="Areas\DoFactory\Views\Producto\_Detalle.cshtml" />
     <Content Include="Areas\DoFactory\Views\Producto\_Editar.cshtml" />
     <Content Include="Areas\DoFactory\Views\Producto\_Eliminar.cshtml" />
+    <Content Include="Areas\DoFactory\Views\Cliente\_Lista.cshtml" />
+    <Content Include="Areas\DoFactory\Views\Cliente\_Crear.cshtml" />
+    <Content Include="Areas\DoFactory\Views\Cliente\_Detalle.cshtml" />
+    <Content Include="Areas\DoFactory\Views\Cliente\_Editar.cshtml" />
+    <Content Include="Areas\DoFactory\Views\Cliente\_Eliminar.cshtml" />
+    <Content Include="Areas\DoFactory\Views\Cliente\Index.cshtml" />
+    <Content Include="Areas\DoFactory\Views\Proveedor\_Lista.cshtml" />
+    <Content Include="Areas\DoFactory\Views\Proveedor\_Crear.cshtml" />
+    <Content Include="Areas\DoFactory\Views\Proveedor\_Detalle.cshtml" />
+    <Content Include="Areas\DoFactory\Views\Proveedor\_Editar.cshtml" />
+    <Content Include="Areas\DoFactory\Views\Proveedor\_Eliminar.cshtml" />
+    <Content Include="Areas\DoFactory\Views\Proveedor\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

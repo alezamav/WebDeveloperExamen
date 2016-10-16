@@ -25,6 +25,12 @@ namespace WebDeveloperExamen
             bundles.Add(new ScriptBundle("~/bundles/producto").Include(
                    "~/Areas/DoFactory/Scripts/producto.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/cliente").Include(
+                  "~/Areas/DoFactory/Scripts/cliente.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/proveedor").Include(
+          "~/Areas/DoFactory/Scripts/proveedor.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 

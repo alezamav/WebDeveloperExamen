@@ -31,7 +31,7 @@ function setPaginator() {
 function goToPage(page) {
     fullUrl = listAction + "?page=" + page + "&size=" + rowsByPage;
     $.get(fullUrl, function (data) {
-        $('#ContenidoProducto').html(data);
+        $('#ContenidoCliente').html(data);
         currentPage = page;
     });
 }
