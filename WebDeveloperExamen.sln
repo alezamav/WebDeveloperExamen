@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDeveloperExamen.Model", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDeveloperExamen.Repository", "WebDeveloperExamen.Repository\WebDeveloperExamen.Repository.csproj", "{964B3732-D647-4686-A796-8E4F966C640D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDeveloperExamen.Tests", "WebDeveloperExamen.Tests\WebDeveloperExamen.Tests.csproj", "{A38FD4E5-78CF-48EE-8DB2-BAB5DDA1A934}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{964B3732-D647-4686-A796-8E4F966C640D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{964B3732-D647-4686-A796-8E4F966C640D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{964B3732-D647-4686-A796-8E4F966C640D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A38FD4E5-78CF-48EE-8DB2-BAB5DDA1A934}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A38FD4E5-78CF-48EE-8DB2-BAB5DDA1A934}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A38FD4E5-78CF-48EE-8DB2-BAB5DDA1A934}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A38FD4E5-78CF-48EE-8DB2-BAB5DDA1A934}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
