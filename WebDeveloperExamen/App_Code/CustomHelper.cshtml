@@ -1,0 +1,50 @@
+﻿@helper GetModal(string title)
+{
+    <div class="modal fade" id="modal-container"
+         tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close"
+                            data-dismiss="modal"
+                            aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">@title</h4>
+                </div>
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@helper Message(string id, string action, string type, string message)
+{
+    <div id="@id" class="hidden">
+        <div class="alert alert-@type">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>@action!</strong> @message
+        </div>
+    </div>
+}
+
+@helper AlertMessages()
+{
+    @Message("successMessage", "Created", "success", "The record was created succesfully.")
+    @Message("deleteMessage", "Deleted", "danger", "The record was created succesfully.")
+    @Message("editMessage", "Edited", "success", "The record was edited properly.")
+}
+
+@helper RowSizeDropdown(){
+    <div class="col-lg-4 page-size">
+        <div class="form-group">
+            <select class="form-control col-lg-1" id="rowsByPage" onclick="changeSize();">
+                <option disabled="" selected="selected">-- Rows by Page --</option>
+                <option>10</option>
+                <option>20</option>
+                <option>50</option>
+            </select>
+        </div>
+    </div>
+}
