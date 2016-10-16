@@ -36,13 +36,13 @@
            
             <td>
  
-                <a href="#" onclick="getModalContent('@Url.Action("Editar",new { area="Personnel", id=item.Id})'); return false;" data-toggle="modal" data-target="#modal-container" class="btn btn-success btn-sm">
+                <a href="#" onclick="getModalContent('@Url.Action("Editar",new { area="DoFactory", id=item.Id})'); return false;" data-toggle="modal" data-target="#modal-container" class="btn btn-success btn-sm">
                     <span class="glyphicon glyphicon-edit"></span> Edit
                 </a>
-                <a href="#" onclick="getModalContent('@Url.Action("Detalles",new { area="Personnel", id=item.Id})'); return false;" data-toggle="modal" data-target="#modal-container" class="btn btn-success btn-sm">
-                    <span class="glyphicon glyphicon-info-sign"></span> Details
+                <a href="#" onclick="getModalContent('@Url.Action("Detalle",new { area="DoFactory", id=item.Id})'); return false;" data-toggle="modal" data-target="#modal-container" class="btn btn-success btn-sm">
+                    <span class="glyphicon glyphicon-info-sign"></span> Detalle
                 </a>
-                <a href="#" onclick="getModalContent('@Url.Action("Eliminar",new { area="Personnel", id=item.Id})'); return false;" data-toggle="modal" data-target="#modal-container" class="btn btn-danger btn-sm">
+                <a href="#" onclick="getModalContent('@Url.Action("Eliminar",new { area="DoFactory", id=item.Id})'); return false;" data-toggle="modal" data-target="#modal-container" class="btn btn-danger btn-sm">
                     <span class="glyphicon glyphicon-remove"></span> Eliminar
                 </a>
 

@@ -20,13 +20,17 @@ namespace WebDeveloperExamen.Model
 
         [Required]
         [StringLength(50)]
+        [Display(Name = "Nombre")]
         public string ProductName { get; set; }
 
+        [Display(Name = "Código de Proveedor")]
         public int SupplierId { get; set; }
 
+        [Display(Name = "Precio Unitario")]
         public decimal? UnitPrice { get; set; }
 
         [StringLength(30)]
+        [Display(Name = "Paquete")]
         public string Package { get; set; }
 
         public bool IsDiscontinued { get; set; }

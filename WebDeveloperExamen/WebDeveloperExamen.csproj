@@ -233,7 +233,11 @@
     <Content Include="Areas\DoFactory\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\DoFactory\Views\Producto\Index.cshtml" />
     <Content Include="App_Code\CustomHelper.cshtml" />
-    <Content Include="Areas\DoFactory\Views\Producto\_List.cshtml" />
+    <Content Include="Areas\DoFactory\Views\Producto\_Lista.cshtml" />
+    <Content Include="Areas\DoFactory\Views\Producto\_Crear.cshtml" />
+    <Content Include="Areas\DoFactory\Views\Producto\_Detalle.cshtml" />
+    <Content Include="Areas\DoFactory\Views\Producto\_Editar.cshtml" />
+    <Content Include="Areas\DoFactory\Views\Producto\_Eliminar.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

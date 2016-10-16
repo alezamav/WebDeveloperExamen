@@ -22,16 +22,13 @@ namespace WebDeveloperExamen.Repository
             db = webcontext;
         }
 
-        public int Add(T entity)
+        public int Agregar(T entity)
         {
-
-            //db.Entry(entity).State = EntityState.Added;
             db.Set<T>().Add(entity);
             return db.SaveChanges();
-
         }
 
-        public int Delete(T entity)
+        public int Eliminar(T entity)
         {
 
             db.Entry(entity).State = EntityState.Deleted;
@@ -39,41 +36,44 @@ namespace WebDeveloperExamen.Repository
 
         }
 
-        public T GetById(Expression<Func<T, bool>> match)
+        public T ObtenerPorCodigo(Expression<Func<T, bool>> match)
         {
 
             return db.Set<T>().FirstOrDefault(match);
 
         }
 
-        public List<T> GetList()
+        public List<T> ObtenerLista()
         {
 
             return db.Set<T>().ToList();
 
         }
 
-        public IEnumerable<T> ListById(Expression<Func<T, bool>> match)
-        {
-            return db.Set<T>().Where(match);
-        }
+        //public IEnumerable<T> ListById(Expression<Func<T, bool>> match)
+        //{
+        //    return db.Set<T>().Where(match);
+        //}
 
-        public IEnumerable<T> OrderedListByDateAndSize(Expression<Func<T, DateTime>> match, int size)
-        {
-            return db.Set<T>().OrderByDescending(match).Take(size);
-        }
+        //public IEnumerable<T> OrderedListByDateAndSize(Expression<Func<T, DateTime>> match, int size)
+        //{
+        //    return db.Set<T>().OrderByDescending(match).Take(size);
+        //}
 
-        public IEnumerable<T> PaginatedList(Expression<Func<T, int>> match, int page, int size)
+        public IEnumerable<T> ListaPaginada(Expression<Func<T, int>> match, int page, int size)
         {
             return db.Set<T>().OrderByDescending(match).Page(page, size);
         }
 
-        public int Update(T entity)
+        public int Actualizar(T entity)
         {
 
             db.Entry(entity).State = EntityState.Modified;
             return db.SaveChanges();
 
         }
+
+
+
     }
 }

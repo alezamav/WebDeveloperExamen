@@ -31,16 +31,16 @@
 
 @helper AlertMessages()
 {
-    @Message("successMessage", "Created", "success", "The record was created succesfully.")
-    @Message("deleteMessage", "Deleted", "danger", "The record was created succesfully.")
-    @Message("editMessage", "Edited", "success", "The record was edited properly.")
+    @Message("successMessage", "Nuevo", "success", "El registro fue creado con éxito.")
+    @Message("deleteMessage", "Eliminar", "danger", "El registro fue eliminado con éxito.")
+    @Message("editMessage", "Editar", "success", "El registro fue actualizado con éxito.")
 }
 
 @helper RowSizeDropdown(){
     <div class="col-lg-4 page-size">
         <div class="form-group">
             <select class="form-control col-lg-1" id="rowsByPage" onclick="changeSize();">
-                <option disabled="" selected="selected">-- Rows by Page --</option>
+                <option disabled="" selected="selected">--                     filas por página --</option>
                 <option>10</option>
                 <option>20</option>
                 <option>50</option>

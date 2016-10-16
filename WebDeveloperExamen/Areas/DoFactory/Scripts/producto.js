@@ -31,7 +31,7 @@ function setPaginator() {
 function goToPage(page) {
     fullUrl = listAction + "?page=" + page + "&size=" + rowsByPage;
     $.get(fullUrl, function (data) {
-        $('#personContent').html(data);
+        $('#ContenidoProducto').html(data);
         currentPage = page;
     });
 }
@@ -53,4 +53,11 @@ function calculateNumberOfPages(rowsByPage) {
 
 function reloadPage() {
     goToPage(currentPage);
+}
+
+function successReload(nom)
+{
+    closeModal(nom);
+    currentPage = 1;
+    reloadPage();
 }

@@ -8,10 +8,11 @@
 
 @CustomHelper.AlertMessages()
 <div>
-    <a href="#" onclick="getModalContent('@Url.Action("Create",new { area="Personnel" })'); return false;" data-toggle="modal" data-target="#modal-container" class="btn btn-success btn-sm">
-        <span class="glyphicon glyphicon-plus"></span> Create New
+    <a href="#" onclick="getModalContent('@Url.Action("Crear",new { area="DoFactory" })'); return false;" data-toggle="modal" data-target="#modal-container" class="btn btn-success btn-sm">
+        <span class="glyphicon glyphicon-plus"></span> Nuevo
     </a>
 </div>
+<br />
 
 <div class="row">
     @CustomHelper.RowSizeDropdown()
@@ -19,7 +20,7 @@
         <div class="paginator"></div>
     </div>
 </div>
-<div id="personContent"></div>
+<div id="ContenidoProducto"></div>
 
 @Scripts.Render("~/bundles/unobtrusive-ajax")
 @CustomHelper.GetModal("Producto")
@@ -31,6 +32,6 @@
 
 <script type="text/javascript">
 
-    var pageSizeAction = '@Url.Action("PageSize", new { controller = "Producto", area = "DoFactory" })';
-    var listAction = '@Url.Action("List", new { controller = "Producto", area = "DoFactory" })';
+    var pageSizeAction = '@Url.Action("CantidadPagina", new { controller = "Producto", area = "DoFactory" })';
+    var listAction = '@Url.Action("Lista", new { controller = "Producto", area = "DoFactory" })';
 </script>
