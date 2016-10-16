@@ -9,13 +9,12 @@
         <ul class="nav navbar-nav navbar-right">
             <li>
                 <a href="#">
-                    Hello @User.Identity.GetUserName()
+                     @User.Identity.GetUserName()
                 </a>
             </li>
             <li>
                 <a href="javascript: document.getElementById('logoutForm').submit()">
-                    Log Off
-                </a>
+                    Cerrar Sesión                </a>
             </li>
         </ul>
     }
@@ -24,10 +23,10 @@ else
 {
     <ul class="nav navbar-nav navbar-right">
         <li>
-            @Html.ActionLink("Register", "Register", new { area = "",controller="Account" })
+            @Html.ActionLink("Registrar", "Register", new { area = "",controller="Account" })
         </li>
         <li>
-            @Html.ActionLink("Log in", "Login", new { area = "", controller = "Account" })
+            @Html.ActionLink("Ingresar", "Login", new { area = "", controller = "Account" })
         </li>
 
     </ul>

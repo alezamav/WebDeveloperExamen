@@ -18,14 +18,14 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                    @Html.ActionLink("Examen", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
                 </div>
                 <nav class="navbar-collapse collapse">        
                     @if(Request.IsAuthenticated)
                     { 
                         <ul class="nav navbar-nav">
-                            <li>@Html.ActionLink("Person", "Index", new { area = "Personnel", controller = "Person" })</li>
-                            <li>@Html.ActionLink("Address", "Index", new { area = "Personnel", controller = "Address" })</li>
+                            <li>@Html.ActionLink("Producto", "Index", new { area = "DoFactory", controller = "Producto" })</li>
+                            <li>@Html.ActionLink("Cliente", "Index", new { area = "DoFactory", controller = "Address" })</li>
                             
                         </ul>
                     }

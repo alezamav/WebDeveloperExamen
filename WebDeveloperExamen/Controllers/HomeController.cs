@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebDeveloperExamen.Filters;
 
 namespace WebDeveloperExamen.Controllers
 {
     public class HomeController : Controller
     {
+        [ExceptionControl]
         public ActionResult Index()
         {
             return View();
